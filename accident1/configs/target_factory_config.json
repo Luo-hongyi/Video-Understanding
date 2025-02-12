@@ -1,0 +1,20 @@
+{
+  "valid_labels": ["person", "car"],
+  "feature_requirements": {
+        "person": ["gender", "dress", "action"],
+        "car": ["color", "type"]
+  },
+  "feature_descriptions": {
+    "person": {
+        "dress": "穿着,比如：红色衣服，黑色裤子",
+        "gender": "外观性别，比如：男，女",
+        "action": "具体的行为，比如往某方向行走，谈话，或观察某事等等"
+    },
+    "car": {
+        "color": "外观颜色",
+        "type": "车辆类型，比如：轿车，卡车，面包车，suv",
+        "action": "行为，比如：行驶，停车，事故",
+        "direction": "行驶方向"
+    }
+  }
+}

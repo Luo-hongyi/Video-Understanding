@@ -1,0 +1,144 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "红色夹克",
+                "gender": "男",
+                "action": "观察事故"
+            }
+        },
+        {
+            "id": "101",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "黑色夹克",
+                "gender": "男",
+                "action": "观察事故"
+            }
+        },
+        {
+            "id": "102",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "蓝色T恤",
+                "gender": "男",
+                "action": "观察事故"
+            }
+        },
+        {
+            "id": "103",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "深色外套",
+                "gender": "男",
+                "action": "观察事故"
+            }
+        },
+        {
+            "id": "104",
+            "time": 240.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "静止",
+                "direction": "路边"
+            }
+        },
+        {
+            "id": "105",
+            "time": 240.0,
+            "label": "car",
+            "features": {
+                "color": "黄色",
+                "type": "救护车",
+                "action": "静止",
+                "direction": "路边"
+            }
+        },
+        {
+            "id": "106",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "浅色外套",
+                "gender": "男",
+                "action": "观察事故"
+            }
+        },
+        {
+            "id": "107",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "黑色裤子",
+                "gender": "男",
+                "action": "走动"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 216.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105"
+            ],
+            "description": "黑色轿车静止在路边，前部冒烟。多人（红色夹克男、黑色夹克男、蓝色T恤男、深色外套男）在事故现场观察和讨论。救护车已经抵达现场，静止在路边。",
+            "cause": "车辆失控导致事故。",
+            "cause_event_id": "e1358186",
+            "confidence": "高",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "da4178c2"
+        },
+        {
+            "event_type": "other",
+            "start_time": 216.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "106"
+            ],
+            "description": "多人（红色夹克男、黑色夹克男、蓝色T恤男、深色外套男、浅色外套男）继续在事故现场围观和讨论，观察事故情况。",
+            "cause": "事故发生后。",
+            "cause_event_id": "38e49c4b",
+            "confidence": "中",
+            "particularity": 1,
+            "connection": "accident",
+            "has_ended": "False",
+            "event_id": "81614442"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 240.0,
+            "target_ids": [
+                "105",
+                "104"
+            ],
+            "description": "救护车静止在路边，黑色轿车事故导致交通拥堵。",
+            "cause": "事故导致交通受阻。",
+            "cause_event_id": "2e7fbd10",
+            "confidence": "高",
+            "particularity": 0,
+            "connection": "accident",
+            "has_ended": "False",
+            "event_id": "cf4a9d80"
+        }
+    ],
+    "summary": "黑色轿车仍然静止在路边，前部冒烟，事故仍在继续。多人（红色夹克男、黑色夹克男、蓝色T恤男、深色外套男、浅色外套男）继续围观和讨论事故情况。救护车已经抵达现场并静止在路边。事故导致交通拥堵。"
+}

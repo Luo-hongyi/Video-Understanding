@@ -1,0 +1,87 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 8.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "撞击到标志杆",
+                "direction": "静止"
+            }
+        },
+        {
+            "id": "101",
+            "time": 8.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "停车",
+                "direction": "西侧"
+            }
+        },
+        {
+            "id": "102",
+            "time": 8.0,
+            "label": "car",
+            "features": {
+                "color": "白色",
+                "type": "suv",
+                "action": "停车",
+                "direction": "北侧"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 5.0,
+            "target_ids": [
+                "100"
+            ],
+            "description": "一辆黑色轿车撞击到路边的标志杆，前部受损。车辆静止不动，前部冒烟。",
+            "cause": "车辆失控",
+            "cause_event_id": "5bdcc8f1",
+            "confidence": "高",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "8d7050d7"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 0.0,
+            "target_ids": [
+                "101",
+                "102"
+            ],
+            "description": "多辆车在十字路口行驶和停车，交通流量较大。黑色轿车停在路口东侧，白色SUV停在路口北侧。",
+            "cause": "车辆在路口行驶和等待红灯",
+            "cause_event_id": "78501a87",
+            "confidence": "高",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "1d8404e8"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 8.0,
+            "target_ids": [
+                "101",
+                "102"
+            ],
+            "description": "另有几辆车继续通过十字路口，交通流量保持不变。",
+            "cause": "车辆在路口行驶和等待红灯",
+            "cause_event_id": "78501a87",
+            "confidence": "中",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "129aff51"
+        }
+    ],
+    "summary": "当前视频片段显示，在十字路口有多辆车行驶和停车，交通流量较大。黑色轿车在路口东侧停车，白色SUV停在路口北侧。先前提到的黑色轿车撞击到标志杆的事故仍在持续，车辆前部冒烟。"
+}

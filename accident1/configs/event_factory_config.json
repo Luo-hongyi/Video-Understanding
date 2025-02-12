@@ -1,0 +1,9 @@
+{
+    "event_types": {
+        "talking": "交谈",
+        "fighting": "打架斗殴",
+        "traffic": "交通状况",
+        "accident": "事故",
+        "other": "其他值得注意的事件"
+    } 
+}

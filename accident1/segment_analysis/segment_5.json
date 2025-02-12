@@ -1,0 +1,129 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 32.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "静止"
+            }
+        },
+        {
+            "id": "101",
+            "time": 32.0,
+            "label": "person",
+            "features": {
+                "dress": "黑色衣服",
+                "gender": "男",
+                "action": "走向黑色轿车"
+            }
+        },
+        {
+            "id": "102",
+            "time": 32.0,
+            "label": "person",
+            "features": {
+                "dress": "红色衣服",
+                "gender": "女",
+                "action": "走向黑色轿车"
+            }
+        },
+        {
+            "id": "103",
+            "time": 33.0,
+            "label": "car",
+            "features": {
+                "color": "蓝色",
+                "type": "suv",
+                "action": "静止"
+            }
+        },
+        {
+            "id": "104",
+            "time": 33.0,
+            "label": "car",
+            "features": {
+                "color": "白色",
+                "type": "货车",
+                "action": "行驶",
+                "direction": "向左"
+            }
+        },
+        {
+            "id": "105",
+            "time": 33.0,
+            "label": "car",
+            "features": {
+                "color": "红色",
+                "type": "轿车",
+                "action": "行驶",
+                "direction": "向右"
+            }
+        },
+        {
+            "id": "106",
+            "time": 34.0,
+            "label": "person",
+            "features": {
+                "dress": "蓝色衣服",
+                "gender": "男",
+                "action": "走向路边"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 32.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102"
+            ],
+            "description": "黑色轿车仍然静止在路边，前部冒烟。两个人（穿黑色衣服的男性和穿红色衣服的女性）正在走向黑色轿车，可能与事故有关。",
+            "cause": "车辆失控导致事故",
+            "cause_event_id": "56abd56b",
+            "confidence": "高",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "64cf5e3b"
+        },
+        {
+            "event_type": "other",
+            "start_time": 32.0,
+            "target_ids": [
+                "101",
+                "102"
+            ],
+            "description": "两个人（穿黑色衣服的男性和穿红色衣服的女性）正在走向黑色轿车，可能是为了查看事故情况或帮助。",
+            "cause": "事故吸引关注",
+            "cause_event_id": "63ba1930",
+            "confidence": "高",
+            "particularity": 3,
+            "connection": "accident",
+            "has_ended": "False",
+            "event_id": "f8915dee"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 32.0,
+            "target_ids": [
+                "103",
+                "104",
+                "105"
+            ],
+            "description": "十字路口有多辆车行驶和停车，交通流量较大。蓝色SUV静止在路边，白色货车向左行驶，红色轿车向右行驶。",
+            "cause": "正常交通流量",
+            "cause_event_id": "None",
+            "confidence": "高",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "eb67a7c0"
+        }
+    ],
+    "summary": "当前视频片段显示，十字路口有多辆车行驶和停车，交通流量较大。黑色轿车仍然静止在路边，前部冒烟。两个人（穿黑色衣服的男性和穿红色衣服的女性）正在走向黑色轿车，可能与事故有关。另一名穿蓝色衣服的男性也在走向路边。"
+}

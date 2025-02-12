@@ -1,0 +1,139 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 256.5,
+            "label": "person",
+            "features": {
+                "dress": "黑色夹克",
+                "gender": "男",
+                "action": "站在路边"
+            }
+        },
+        {
+            "id": "101",
+            "time": 257.0,
+            "label": "person",
+            "features": {
+                "dress": "粉色外套",
+                "gender": "女",
+                "action": "站在路边"
+            }
+        },
+        {
+            "id": "102",
+            "time": 257.5,
+            "label": "person",
+            "features": {
+                "dress": "浅色夹克",
+                "gender": "男",
+                "action": "站在路边"
+            }
+        },
+        {
+            "id": "103",
+            "time": 258.0,
+            "label": "person",
+            "features": {
+                "dress": "黑色夹克",
+                "gender": "男",
+                "action": "弯腰捡东西"
+            }
+        },
+        {
+            "id": "104",
+            "time": 256.5,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "右转",
+                "direction": "右转"
+            }
+        },
+        {
+            "id": "105",
+            "time": 258.0,
+            "label": "car",
+            "features": {
+                "color": "白色",
+                "type": "轿车",
+                "action": "行驶",
+                "direction": "直行"
+            }
+        },
+        {
+            "id": "106",
+            "time": 260.0,
+            "label": "car",
+            "features": {
+                "color": "银色",
+                "type": "面包车",
+                "action": "行驶",
+                "direction": "直行"
+            }
+        },
+        {
+            "id": "107",
+            "time": 260.5,
+            "label": "motorbike",
+            "features": {
+                "color": "黑色",
+                "type": "摩托车",
+                "action": "行驶",
+                "direction": "左转"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "other",
+            "start_time": 249.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102"
+            ],
+            "description": "多人（黑色夹克男、粉色外套女、浅色夹克男）继续站在路边，观察交通情况以及路口的行人和车辆。",
+            "cause": "之前的交通事故导致。",
+            "cause_event_id": "7fae2c84",
+            "confidence": "高",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "48d47bb1"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 256.5,
+            "target_ids": [
+                "104",
+                "105"
+            ],
+            "description": "黑色轿车在路口右转，白色轿车直行通过路口。两辆车在行驶过程中没有发生碰撞，交通状况正常。",
+            "cause": "正常交通流动。",
+            "cause_event_id": "None",
+            "confidence": "高",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "c924b8e1"
+        },
+        {
+            "event_type": "other",
+            "start_time": 258.0,
+            "target_ids": [
+                "103"
+            ],
+            "description": "黑色夹克男在路边弯腰拾起地上的物品。此行为没有对周围交通产生影响。",
+            "cause": "可能是之前掉落的物品。",
+            "cause_event_id": "None",
+            "confidence": "中",
+            "particularity": 1,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "60d69456"
+        }
+    ],
+    "summary": "之前的交通事故已经结束，黑色轿车仍静止在路边。当前片段中，黑色和白色轿车在路口正常行驶。多名行人（黑色夹克男、粉色外套女、浅色夹克男）继续站在路边观察交通情况，黑色夹克男弯腰捡起地上的物品。"
+}

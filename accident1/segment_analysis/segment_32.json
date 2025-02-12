@@ -1,0 +1,167 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 249.0,
+            "label": "person",
+            "features": {
+                "dress": "黑色夹克",
+                "gender": "男",
+                "action": "走向路口"
+            }
+        },
+        {
+            "id": "101",
+            "time": 249.5,
+            "label": "person",
+            "features": {
+                "dress": "粉色外套",
+                "gender": "女",
+                "action": "站在路边"
+            }
+        },
+        {
+            "id": "102",
+            "time": 250.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "行驶",
+                "direction": "向右转"
+            }
+        },
+        {
+            "id": "103",
+            "time": 250.5,
+            "label": "person",
+            "features": {
+                "dress": "浅色夹克",
+                "gender": "男",
+                "action": "站在路边"
+            }
+        },
+        {
+            "id": "104",
+            "time": 251.0,
+            "label": "car",
+            "features": {
+                "color": "白色",
+                "type": "轿车",
+                "action": "静止",
+                "direction": "None"
+            }
+        },
+        {
+            "id": "105",
+            "time": 251.5,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "行驶",
+                "direction": "向右转"
+            }
+        },
+        {
+            "id": "106",
+            "time": 252.0,
+            "label": "person",
+            "features": {
+                "dress": "黑色夹克",
+                "gender": "男",
+                "action": "站在路边"
+            }
+        },
+        {
+            "id": "107",
+            "time": 252.5,
+            "label": "person",
+            "features": {
+                "dress": "粉色外套",
+                "gender": "女",
+                "action": "站在路边"
+            }
+        },
+        {
+            "id": "108",
+            "time": 253.0,
+            "label": "person",
+            "features": {
+                "dress": "黑色夹克",
+                "gender": "男",
+                "action": "走向路口"
+            }
+        },
+        {
+            "id": "109",
+            "time": 253.5,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "行驶",
+                "direction": "向右转"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "traffic",
+            "start_time": 249.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105",
+                "106",
+                "107",
+                "108",
+                "109"
+            ],
+            "description": "黑色轿车和白色轿车在路口交汇，其中黑色轿车正在右转。多名行人站在路边观察，另有一行人正在穿过路口。",
+            "cause": "常规交通活动。",
+            "cause_event_id": "None",
+            "confidence": "高",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "185bbe2d"
+        },
+        {
+            "event_type": "other",
+            "start_time": 249.0,
+            "target_ids": [
+                "100",
+                "101",
+                "103",
+                "106",
+                "107"
+            ],
+            "description": "多人（黑色夹克男、粉色外套女、浅色夹克男）站在路边，观察交通情况以及路口的行人和车辆。",
+            "cause": "之前的交通事故导致。",
+            "cause_event_id": "81614442",
+            "confidence": "中",
+            "particularity": 1,
+            "connection": "traffic",
+            "has_ended": "False",
+            "event_id": "7fae2c84"
+        },
+        {
+            "event_type": "accident",
+            "start_time": 216.0,
+            "target_ids": [],
+            "description": "黑色轿车静止在路边，前部冒烟。多人（红色夹克男、黑色夹克男、蓝色T恤男、深色外套男）在事故现场观察和讨论。救护车已经抵达现场，静止在路边。",
+            "cause": "车辆失控导致事故。",
+            "cause_event_id": "da4178c2",
+            "confidence": "高",
+            "particularity": 0,
+            "connection": "other",
+            "has_ended": "True",
+            "event_id": "0db0f23a"
+        }
+    ],
+    "summary": "之前的交通事故已经结束，黑色轿车仍静止在路边。当前片段中，黑色和白色轿车在路口交汇，黑色轿车正在右转。多名行人（黑色夹克男、粉色外套女、浅色夹克男）站在路边观察交通情况，另有一名行人正在穿过路口。"
+}

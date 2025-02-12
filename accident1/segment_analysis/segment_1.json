@@ -1,0 +1,171 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 0.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "停车",
+                "direction": "东"
+            }
+        },
+        {
+            "id": "101",
+            "time": 0.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "SUV",
+                "action": "行驶",
+                "direction": "南"
+            }
+        },
+        {
+            "id": "102",
+            "time": 1.0,
+            "label": "car",
+            "features": {
+                "color": "白色",
+                "type": "SUV",
+                "action": "行驶",
+                "direction": "南"
+            }
+        },
+        {
+            "id": "103",
+            "time": 1.5,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "厢式货车",
+                "action": "行驶",
+                "direction": "南"
+            }
+        },
+        {
+            "id": "104",
+            "time": 2.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "行驶",
+                "direction": "南"
+            }
+        },
+        {
+            "id": "105",
+            "time": 2.5,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "厢式货车",
+                "action": "行驶",
+                "direction": "南"
+            }
+        },
+        {
+            "id": "106",
+            "time": 3.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "SUV",
+                "action": "行驶",
+                "direction": "南"
+            }
+        },
+        {
+            "id": "107",
+            "time": 3.5,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "厢式货车",
+                "action": "行驶",
+                "direction": "南"
+            }
+        },
+        {
+            "id": "108",
+            "time": 4.0,
+            "label": "car",
+            "features": {
+                "color": "白色",
+                "type": "SUV",
+                "action": "行驶",
+                "direction": "南"
+            }
+        },
+        {
+            "id": "109",
+            "time": 5.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "行驶",
+                "direction": "西"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "traffic",
+            "start_time": 0.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105",
+                "106",
+                "107",
+                "108",
+                "109"
+            ],
+            "description": "多辆车在十字路口行驶和停车，交通流量较大。黑色轿车停在路口东侧，其他车辆从不同方向通过路口。",
+            "cause": "车辆在路口行驶和等待红灯",
+            "cause_event_id": "None",
+            "confidence": "高",
+            "particularity": 1,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "78501a87"
+        },
+        {
+            "event_type": "accident",
+            "start_time": 5.0,
+            "target_ids": [
+                "109"
+            ],
+            "description": "一辆黑色轿车在十字路口撞击到路边的标志杆，车辆前部受损。",
+            "cause": "车辆失控",
+            "cause_event_id": "None",
+            "confidence": "高",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "5bdcc8f1"
+        },
+        {
+            "event_type": "other",
+            "start_time": 0.0,
+            "target_ids": [
+                "100"
+            ],
+            "description": "黑色轿车在路口东侧停车，可能在观察交通情况或等待信号灯。",
+            "cause": "车辆停车等待",
+            "cause_event_id": "None",
+            "confidence": "中",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "True",
+            "event_id": "f93d855d"
+        }
+    ],
+    "summary": "当前视频片段显示，在十字路口有多辆车行驶和停车，交通流量较大。一辆黑色轿车在路口东侧停车，随后继续行驶。一辆黑色轿车在十字路口撞击到路边的标志杆，车辆前部受损。"
+}

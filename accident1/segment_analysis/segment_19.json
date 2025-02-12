@@ -1,0 +1,174 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 144.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "静止",
+                "direction": "路边"
+            }
+        },
+        {
+            "id": "101",
+            "time": 144.0,
+            "label": "person",
+            "features": {
+                "dress": "黑色衣服",
+                "gender": "男性",
+                "action": "观察"
+            }
+        },
+        {
+            "id": "102",
+            "time": 144.0,
+            "label": "person",
+            "features": {
+                "dress": "红色衣服",
+                "gender": "女性",
+                "action": "观察"
+            }
+        },
+        {
+            "id": "103",
+            "time": 144.0,
+            "label": "person",
+            "features": {
+                "dress": "蓝色衣服",
+                "gender": "男性",
+                "action": "观察"
+            }
+        },
+        {
+            "id": "104",
+            "time": 144.0,
+            "label": "person",
+            "features": {
+                "dress": "绿色衣服",
+                "gender": "男性",
+                "action": "观察"
+            }
+        },
+        {
+            "id": "105",
+            "time": 144.0,
+            "label": "person",
+            "features": {
+                "dress": "白色衣服",
+                "gender": "男性",
+                "action": "观察"
+            }
+        },
+        {
+            "id": "106",
+            "time": 144.0,
+            "label": "person",
+            "features": {
+                "dress": "紫色衣服",
+                "gender": "女性",
+                "action": "观察"
+            }
+        },
+        {
+            "id": "107",
+            "time": 144.0,
+            "label": "car",
+            "features": {
+                "color": "白色",
+                "type": "货车",
+                "action": "右转",
+                "direction": "十字路口"
+            }
+        },
+        {
+            "id": "108",
+            "time": 144.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "左转",
+                "direction": "十字路口"
+            }
+        },
+        {
+            "id": "109",
+            "time": 144.0,
+            "label": "car",
+            "features": {
+                "color": "黑色",
+                "type": "轿车",
+                "action": "直行",
+                "direction": "十字路口"
+            }
+        },
+        {
+            "id": "110",
+            "time": 144.0,
+            "label": "person",
+            "features": {
+                "dress": "黑色衣服",
+                "gender": "男性",
+                "action": "过马路"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 136.5,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105",
+                "106"
+            ],
+            "description": "黑色轿车仍然静止在路边，前部冒烟。穿黑色衣服的男性、穿红色衣服的女性、穿蓝色衣服、绿色衣服和白色衣服的男性以及穿紫色衣服的女性在轿车旁继续观察。",
+            "cause": "车辆失控导致事故",
+            "cause_event_id": "e4f8c58c",
+            "confidence": "高",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "664ee021"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 144.0,
+            "target_ids": [
+                "107",
+                "108",
+                "109"
+            ],
+            "description": "十字路口的交通状况正常，一辆白色货车正在右转，一辆黑色轿车正在左转，另一辆黑色轿车正在直行。",
+            "cause": "正常交通活动",
+            "cause_event_id": "None",
+            "confidence": "高",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "19145e3a"
+        },
+        {
+            "event_type": "other",
+            "start_time": 144.0,
+            "target_ids": [
+                "110"
+            ],
+            "description": "穿黑色衣服的男性正在过马路。",
+            "cause": "正常行人活动",
+            "cause_event_id": "None",
+            "confidence": "中",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "d9d6ba9c"
+        }
+    ],
+    "summary": "黑色轿车仍然静止在路边，前部冒烟，事故仍在继续。穿黑色衣服的男性、穿红色衣服的女性、穿蓝色衣服、绿色衣服和白色衣服的男性以及穿紫色衣服的女性在轿车旁继续观察。十字路口的交通状况正常，一辆白色货车正在右转，一辆黑色轿车正在左转，另一辆黑色轿车正在直行。同时，穿黑色衣服的男性正在过马路。事故事件和交通事件仍在继续。"
+}
