@@ -1,0 +1,119 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 56.0,
+            "label": "person",
+            "features": {
+                "dress": "blackclothes",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "101",
+            "time": 56.0,
+            "label": "person",
+            "features": {
+                "dress": "redclothes",
+                "gender": "female",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "102",
+            "time": 56.0,
+            "label": "person",
+            "features": {
+                "dress": "blueclothes",
+                "gender": "male",
+                "action": "walking towardroadside"
+            }
+        },
+        {
+            "id": "103",
+            "time": 56.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "stationary",
+                "direction": "roadside"
+            }
+        },
+        {
+            "id": "104",
+            "time": 56.0,
+            "label": "car",
+            "features": {
+                "color": "silver",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "intersection"
+            }
+        },
+        {
+            "id": "105",
+            "time": 56.0,
+            "label": "car",
+            "features": {
+                "color": "black or dark",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "intersection"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 32.0,
+            "target_ids": [
+                "100",
+                "101",
+                "103"
+            ],
+            "description": "blacksedanstill stationaryroadside，front is smoking。blackclothesmaleredclothesfemalealreadyblacksedan，possiblyrelated。blueclothesmale。",
+            "cause": "loss of control",
+            "cause_event_id": "729d3224",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": false,
+            "event_id": "14f6bd96"
+        },
+        {
+            "event_type": "other",
+            "start_time": 32.0,
+            "target_ids": [
+                "100",
+                "101"
+            ],
+            "description": "blackclothesmaleredclothesfemalealreadyblacksedan，possibly。blueclothesmalewalking towardroadside。",
+            "cause": "accident draws attention",
+            "cause_event_id": "be975aed",
+            "confidence": "high",
+            "particularity": 1,
+            "connection": "accident",
+            "has_ended": false,
+            "event_id": "2e5f65ae"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 56.0,
+            "target_ids": [
+                "104",
+                "105"
+            ],
+            "description": "intersectionheavy traffic，silversedanblack or dark SUVmoving。",
+            "cause": "normal traffic",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": false,
+            "event_id": "9e669dac"
+        }
+    ],
+    "summary": "，blacksedanstill stationaryroadside，front is smoking。blackclothesmaleredclothesfemalesedan，possiblyrelated。blueclothesmalewalking towardroadside。intersectionheavy traffic，silversedanblack or dark SUVmoving。"
+}

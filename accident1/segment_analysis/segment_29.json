@@ -1,0 +1,145 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 224.0,
+            "label": "person",
+            "features": {
+                "dress": "red",
+                "gender": "male",
+                "action": ""
+            }
+        },
+        {
+            "id": "101",
+            "time": 224.0,
+            "label": "person",
+            "features": {
+                "dress": "black",
+                "gender": "male",
+                "action": ""
+            }
+        },
+        {
+            "id": "102",
+            "time": 224.0,
+            "label": "person",
+            "features": {
+                "dress": "blueT",
+                "gender": "male",
+                "action": ""
+            }
+        },
+        {
+            "id": "103",
+            "time": 224.0,
+            "label": "person",
+            "features": {
+                "dress": "dark",
+                "gender": "male",
+                "action": ""
+            }
+        },
+        {
+            "id": "104",
+            "time": 224.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "stationary",
+                "direction": "N/A"
+            }
+        },
+        {
+            "id": "105",
+            "time": 224.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "intersection"
+            }
+        },
+        {
+            "id": "106",
+            "time": 224.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "",
+                "action": "moving",
+                "direction": "intersection"
+            }
+        },
+        {
+            "id": "107",
+            "time": 224.0,
+            "label": "car",
+            "features": {
+                "color": "",
+                "type": "",
+                "action": "moving",
+                "direction": "intersection"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 216.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104"
+            ],
+            "description": "blacksedanstationaryroadside，front is smoking。（redmale、blackmale、blueTmale、darkmale）observing。。",
+            "cause": "loss of control。",
+            "cause_event_id": "da429591",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "d5f57e6a"
+        },
+        {
+            "event_type": "other",
+            "start_time": 216.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103"
+            ],
+            "description": "（redmale、blackmale、blueTmale、darkmale）continue，observing。",
+            "cause": "。",
+            "cause_event_id": "9ed8d485",
+            "confidence": "high",
+            "particularity": 3,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "130189bf"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 224.0,
+            "target_ids": [
+                "105",
+                "106",
+                "107"
+            ],
+            "description": "，white SUV、blackintersectionmoving。",
+            "cause": "N/A",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "b2f7831d"
+        }
+    ],
+    "summary": "blacksedanstill stationaryroadside，front is smoking，continue。（redmale、blackmale、blueTmale、darkmale）continue。。white SUVblackintersectionmoving，。"
+}

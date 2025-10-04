@@ -1,0 +1,139 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 264.0,
+            "label": "person",
+            "features": {
+                "dress": "black",
+                "gender": "male",
+                "action": ""
+            }
+        },
+        {
+            "id": "101",
+            "time": 264.0,
+            "label": "person",
+            "features": {
+                "dress": "darkclothes",
+                "gender": "male",
+                "action": "roadside"
+            }
+        },
+        {
+            "id": "102",
+            "time": 264.0,
+            "label": "person",
+            "features": {
+                "dress": "redtop",
+                "gender": "female",
+                "action": "roadside"
+            }
+        },
+        {
+            "id": "103",
+            "time": 264.5,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "right"
+            }
+        },
+        {
+            "id": "104",
+            "time": 264.5,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "right"
+            }
+        },
+        {
+            "id": "105",
+            "time": 265.0,
+            "label": "car",
+            "features": {
+                "color": "blue",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "left"
+            }
+        },
+        {
+            "id": "106",
+            "time": 266.0,
+            "label": "car",
+            "features": {
+                "color": "silver",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "right"
+            }
+        },
+        {
+            "id": "107",
+            "time": 266.5,
+            "label": "person",
+            "features": {
+                "dress": "",
+                "gender": "male",
+                "action": ""
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "other",
+            "start_time": 258.0,
+            "target_ids": [
+                "100"
+            ],
+            "description": "blackmaleroadside。。",
+            "cause": "possibly。",
+            "cause_event_id": "60d69456",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "True",
+            "event_id": "9f05dceb"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 264.0,
+            "target_ids": [
+                "103",
+                "104",
+                "105",
+                "106"
+            ],
+            "description": "（black、white、blue、silver）moving，moving。。",
+            "cause": "normal traffic。",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "3a72f330"
+        },
+        {
+            "event_type": "other",
+            "start_time": 266.5,
+            "target_ids": [
+                "107"
+            ],
+            "description": "male，。",
+            "cause": "possiblyroadside。",
+            "cause_event_id": "None",
+            "confidence": "medium",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "b747a025"
+        }
+    ],
+    "summary": "already，blacksedanstill stationaryroadside。，（black、white、blue、silver）moving。blackmalealready。male。"
+}

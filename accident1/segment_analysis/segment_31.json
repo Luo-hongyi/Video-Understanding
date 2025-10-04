@@ -1,0 +1,144 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "red",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "101",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "black",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "102",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "blueT",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "103",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "dark",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "104",
+            "time": 240.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "stationary",
+                "direction": "roadside"
+            }
+        },
+        {
+            "id": "105",
+            "time": 240.0,
+            "label": "car",
+            "features": {
+                "color": "",
+                "type": "",
+                "action": "stationary",
+                "direction": "roadside"
+            }
+        },
+        {
+            "id": "106",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "107",
+            "time": 240.0,
+            "label": "person",
+            "features": {
+                "dress": "black",
+                "gender": "male",
+                "action": ""
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 216.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105"
+            ],
+            "description": "blacksedanstationaryroadside，front is smoking。（redmale、blackmale、blueTmale、darkmale）observing。already，stationaryroadside。",
+            "cause": "loss of control。",
+            "cause_event_id": "e1358186",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "da4178c2"
+        },
+        {
+            "event_type": "other",
+            "start_time": 216.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "106"
+            ],
+            "description": "（redmale、blackmale、blueTmale、darkmale、male）continue，observing。",
+            "cause": "。",
+            "cause_event_id": "38e49c4b",
+            "confidence": "medium",
+            "particularity": 1,
+            "connection": "accident",
+            "has_ended": "False",
+            "event_id": "81614442"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 240.0,
+            "target_ids": [
+                "105",
+                "104"
+            ],
+            "description": "stationaryroadside，blacksedan。",
+            "cause": "。",
+            "cause_event_id": "2e7fbd10",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "accident",
+            "has_ended": "False",
+            "event_id": "cf4a9d80"
+        }
+    ],
+    "summary": "blacksedanstill stationaryroadside，front is smoking，continue。（redmale、blackmale、blueTmale、darkmale、male）continue。alreadystationaryroadside。。"
+}

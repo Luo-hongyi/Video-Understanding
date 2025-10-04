@@ -1,0 +1,163 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 192.0,
+            "label": "person",
+            "features": {
+                "dress": "blackclothes",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "101",
+            "time": 192.0,
+            "label": "person",
+            "features": {
+                "dress": "redclothes",
+                "gender": "female",
+                "action": "blacksedan"
+            }
+        },
+        {
+            "id": "102",
+            "time": 192.0,
+            "label": "person",
+            "features": {
+                "dress": "blueclothes",
+                "gender": "male",
+                "action": "blacksedan"
+            }
+        },
+        {
+            "id": "103",
+            "time": 192.0,
+            "label": "person",
+            "features": {
+                "dress": "greenclothes",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "104",
+            "time": 192.0,
+            "label": "person",
+            "features": {
+                "dress": "whiteclothes",
+                "gender": "male",
+                "action": "blacksedan"
+            }
+        },
+        {
+            "id": "105",
+            "time": 192.0,
+            "label": "person",
+            "features": {
+                "dress": "purpleclothes",
+                "gender": "female",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "106",
+            "time": 192.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "stationary",
+                "direction": "none"
+            }
+        },
+        {
+            "id": "107",
+            "time": 192.0,
+            "label": "car",
+            "features": {
+                "color": "",
+                "type": "sedan",
+                "action": "moving",
+                "direction": ""
+            }
+        },
+        {
+            "id": "108",
+            "time": 192.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "sedan",
+                "action": "moving",
+                "direction": ""
+            }
+        },
+        {
+            "id": "109",
+            "time": 192.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": ""
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 168.0,
+            "target_ids": [
+                "106"
+            ],
+            "description": "continue，blacksedanstationaryroadside，front is smoking。observing。",
+            "cause": "loss of control",
+            "cause_event_id": "9bcb2d87",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "4f2f3d40"
+        },
+        {
+            "event_type": "other",
+            "start_time": 168.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105"
+            ],
+            "description": "，continueobserving。",
+            "cause": "",
+            "cause_event_id": "56191b35",
+            "confidence": "high",
+            "particularity": 1,
+            "connection": "accident",
+            "has_ended": "False",
+            "event_id": "c668d29d"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 192.0,
+            "target_ids": [
+                "107",
+                "108",
+                "109"
+            ],
+            "description": "white、blacksedanintersectionmoving，。",
+            "cause": "intersectionnormal traffic",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "a175d6af"
+        }
+    ],
+    "summary": "blacksedanstill stationaryroadside，front is smoking，continue。continue。white、blacksedanintersectionmoving，。observingcontinue。"
+}

@@ -1,0 +1,87 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 8.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "crashed intosignpost",
+                "direction": "stationary"
+            }
+        },
+        {
+            "id": "101",
+            "time": 8.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "parked",
+                "direction": "west"
+            }
+        },
+        {
+            "id": "102",
+            "time": 8.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "SUV",
+                "action": "parked",
+                "direction": "north"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 5.0,
+            "target_ids": [
+                "100"
+            ],
+            "description": "blacksedancrashed intoroadsidesignpost，。stationary，front is smoking。",
+            "cause": "loss of control",
+            "cause_event_id": "5bdcc8f1",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "8d7050d7"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 0.0,
+            "target_ids": [
+                "101",
+                "102"
+            ],
+            "description": "intersectionmovingparked，heavy traffic。blacksedaneast，white SUVnorth。",
+            "cause": "moving",
+            "cause_event_id": "78501a87",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "1d8404e8"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 8.0,
+            "target_ids": [
+                "101",
+                "102"
+            ],
+            "description": "continueintersection，。",
+            "cause": "moving",
+            "cause_event_id": "78501a87",
+            "confidence": "medium",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "129aff51"
+        }
+    ],
+    "summary": "，intersectionmovingparked，heavy traffic。blacksedaneastparked，white SUVnorth。blacksedancrashed intosignpost，front is smoking。"
+}

@@ -1,0 +1,129 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 32.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "stationary"
+            }
+        },
+        {
+            "id": "101",
+            "time": 32.0,
+            "label": "person",
+            "features": {
+                "dress": "blackclothes",
+                "gender": "male",
+                "action": "walking toward black sedan"
+            }
+        },
+        {
+            "id": "102",
+            "time": 32.0,
+            "label": "person",
+            "features": {
+                "dress": "redclothes",
+                "gender": "female",
+                "action": "walking toward black sedan"
+            }
+        },
+        {
+            "id": "103",
+            "time": 33.0,
+            "label": "car",
+            "features": {
+                "color": "blue",
+                "type": "SUV",
+                "action": "stationary"
+            }
+        },
+        {
+            "id": "104",
+            "time": 33.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "",
+                "action": "moving",
+                "direction": "left"
+            }
+        },
+        {
+            "id": "105",
+            "time": 33.0,
+            "label": "car",
+            "features": {
+                "color": "red",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "right"
+            }
+        },
+        {
+            "id": "106",
+            "time": 34.0,
+            "label": "person",
+            "features": {
+                "dress": "blueclothes",
+                "gender": "male",
+                "action": "walking towardroadside"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 32.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102"
+            ],
+            "description": "blacksedanstill stationaryroadside，front is smoking。（blackclothesmaleredclothesfemale）walking toward black sedan，possiblyrelated。",
+            "cause": "loss of control",
+            "cause_event_id": "56abd56b",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "64cf5e3b"
+        },
+        {
+            "event_type": "other",
+            "start_time": 32.0,
+            "target_ids": [
+                "101",
+                "102"
+            ],
+            "description": "（blackclothesmaleredclothesfemale）walking toward black sedan，possibly。",
+            "cause": "accident draws attention",
+            "cause_event_id": "63ba1930",
+            "confidence": "high",
+            "particularity": 3,
+            "connection": "accident",
+            "has_ended": "False",
+            "event_id": "f8915dee"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 32.0,
+            "target_ids": [
+                "103",
+                "104",
+                "105"
+            ],
+            "description": "intersectionmovingparked，heavy traffic。blueSUVstationaryroadside，whiteleftmoving，redsedanrightmoving。",
+            "cause": "normal traffic",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "eb67a7c0"
+        }
+    ],
+    "summary": "，intersectionmovingparked，heavy traffic。blacksedanstill stationaryroadside，front is smoking。（blackclothesmaleredclothesfemale）walking toward black sedan，possiblyrelated。blueclothesmalewalking towardroadside。"
+}

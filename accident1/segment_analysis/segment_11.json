@@ -1,0 +1,137 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 80.0,
+            "label": "person",
+            "features": {
+                "dress": "blackclothes",
+                "gender": "male",
+                "action": "blacksedan"
+            }
+        },
+        {
+            "id": "101",
+            "time": 80.0,
+            "label": "person",
+            "features": {
+                "dress": "redclothes",
+                "gender": "female",
+                "action": "blacksedan"
+            }
+        },
+        {
+            "id": "102",
+            "time": 80.0,
+            "label": "person",
+            "features": {
+                "dress": "blueclothes",
+                "gender": "male",
+                "action": "blacksedan"
+            }
+        },
+        {
+            "id": "103",
+            "time": 80.0,
+            "label": "person",
+            "features": {
+                "dress": "greenclothes",
+                "gender": "male",
+                "action": "blacksedan"
+            }
+        },
+        {
+            "id": "104",
+            "time": 80.0,
+            "label": "person",
+            "features": {
+                "dress": "whiteclothes",
+                "gender": "male",
+                "action": "blacksedan"
+            }
+        },
+        {
+            "id": "105",
+            "time": 80.0,
+            "label": "person",
+            "features": {
+                "dress": "blackclothes",
+                "gender": "male",
+                "action": ""
+            }
+        },
+        {
+            "id": "106",
+            "time": 80.5,
+            "label": "person",
+            "features": {
+                "dress": "redclothes",
+                "gender": "male",
+                "action": "walking toward black sedan"
+            }
+        },
+        {
+            "id": "107",
+            "time": 80.5,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "stationary",
+                "direction": "roadside"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 32.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "107"
+            ],
+            "description": "blacksedanstill stationaryroadside，front is smoking。blackclothesmaleredclothesfemalesedan。blueclothes、greenclotheswhiteclothesmaleobservingblacksedan。",
+            "cause": "loss of control",
+            "cause_event_id": "5ef60680",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "139a547c"
+        },
+        {
+            "event_type": "other",
+            "start_time": 32.0,
+            "target_ids": [
+                "105",
+                "106"
+            ],
+            "description": "blackclothesmale。redclothesmalewalking toward black sedan。",
+            "cause": "accident draws attention",
+            "cause_event_id": "56ef83dc",
+            "confidence": "medium",
+            "particularity": 1,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "1b25ae8c"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 80.0,
+            "target_ids": [],
+            "description": "intersection，moving，。",
+            "cause": "None",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "3ca7bee6"
+        }
+    ],
+    "summary": "，blacksedanstill stationaryroadside，front is smoking。blackclothesmaleredclothesfemalesedan，possiblyrelated。blueclothes、greenclotheswhiteclothesmaleobservingblacksedan。blackclothesmale，redclothesmalewalking toward black sedan。intersection，moving。"
+}

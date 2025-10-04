@@ -1,0 +1,171 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 0.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "parked",
+                "direction": "east"
+            }
+        },
+        {
+            "id": "101",
+            "time": 0.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "south"
+            }
+        },
+        {
+            "id": "102",
+            "time": 1.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "south"
+            }
+        },
+        {
+            "id": "103",
+            "time": 1.5,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "van",
+                "action": "moving",
+                "direction": "south"
+            }
+        },
+        {
+            "id": "104",
+            "time": 2.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "south"
+            }
+        },
+        {
+            "id": "105",
+            "time": 2.5,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "van",
+                "action": "moving",
+                "direction": "south"
+            }
+        },
+        {
+            "id": "106",
+            "time": 3.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "south"
+            }
+        },
+        {
+            "id": "107",
+            "time": 3.5,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "van",
+                "action": "moving",
+                "direction": "south"
+            }
+        },
+        {
+            "id": "108",
+            "time": 4.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "south"
+            }
+        },
+        {
+            "id": "109",
+            "time": 5.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "west"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "traffic",
+            "start_time": 0.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105",
+                "106",
+                "107",
+                "108",
+                "109"
+            ],
+            "description": "intersectionmovingparked，heavy traffic。blacksedaneast，。",
+            "cause": "moving",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 1,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "78501a87"
+        },
+        {
+            "event_type": "accident",
+            "start_time": 5.0,
+            "target_ids": [
+                "109"
+            ],
+            "description": "blacksedanintersectioncrashed intoroadsidesignpost，。",
+            "cause": "loss of control",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "5bdcc8f1"
+        },
+        {
+            "event_type": "other",
+            "start_time": 0.0,
+            "target_ids": [
+                "100"
+            ],
+            "description": "blacksedaneastparked，possiblyobserving。",
+            "cause": "parked",
+            "cause_event_id": "None",
+            "confidence": "medium",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "True",
+            "event_id": "f93d855d"
+        }
+    ],
+    "summary": "，intersectionmovingparked，heavy traffic。blacksedaneastparked，continuemoving。blacksedanintersectioncrashed intoroadsidesignpost，。"
+}

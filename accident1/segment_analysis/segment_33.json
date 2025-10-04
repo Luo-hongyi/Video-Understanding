@@ -1,0 +1,139 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 256.5,
+            "label": "person",
+            "features": {
+                "dress": "black",
+                "gender": "male",
+                "action": "roadside"
+            }
+        },
+        {
+            "id": "101",
+            "time": 257.0,
+            "label": "person",
+            "features": {
+                "dress": "",
+                "gender": "female",
+                "action": "roadside"
+            }
+        },
+        {
+            "id": "102",
+            "time": 257.5,
+            "label": "person",
+            "features": {
+                "dress": "",
+                "gender": "male",
+                "action": "roadside"
+            }
+        },
+        {
+            "id": "103",
+            "time": 258.0,
+            "label": "person",
+            "features": {
+                "dress": "black",
+                "gender": "male",
+                "action": "eastwest"
+            }
+        },
+        {
+            "id": "104",
+            "time": 256.5,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "",
+                "direction": ""
+            }
+        },
+        {
+            "id": "105",
+            "time": 258.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "sedan",
+                "action": "moving",
+                "direction": ""
+            }
+        },
+        {
+            "id": "106",
+            "time": 260.0,
+            "label": "car",
+            "features": {
+                "color": "silver",
+                "type": "van",
+                "action": "moving",
+                "direction": ""
+            }
+        },
+        {
+            "id": "107",
+            "time": 260.5,
+            "label": "motorbike",
+            "features": {
+                "color": "black",
+                "type": "",
+                "action": "moving",
+                "direction": ""
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "other",
+            "start_time": 249.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102"
+            ],
+            "description": "（blackmale、female、male）continueroadside，observing。",
+            "cause": "。",
+            "cause_event_id": "7fae2c84",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "48d47bb1"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 256.5,
+            "target_ids": [
+                "104",
+                "105"
+            ],
+            "description": "blacksedan，whitesedan。moving，。",
+            "cause": "normal traffic。",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "c924b8e1"
+        },
+        {
+            "event_type": "other",
+            "start_time": 258.0,
+            "target_ids": [
+                "103"
+            ],
+            "description": "blackmaleroadside。。",
+            "cause": "possibly。",
+            "cause_event_id": "None",
+            "confidence": "medium",
+            "particularity": 1,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "60d69456"
+        }
+    ],
+    "summary": "already，blacksedanstationaryroadside。，blackwhitesedanmoving。（blackmale、female、male）continueroadsideobserving，blackmale。"
+}

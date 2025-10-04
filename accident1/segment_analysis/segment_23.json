@@ -1,0 +1,145 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 177.0,
+            "label": "person",
+            "features": {
+                "dress": "blackclothes",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "101",
+            "time": 177.0,
+            "label": "person",
+            "features": {
+                "dress": "redclothes",
+                "gender": "female",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "102",
+            "time": 177.0,
+            "label": "person",
+            "features": {
+                "dress": "blueclothes",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "103",
+            "time": 177.0,
+            "label": "person",
+            "features": {
+                "dress": "greenclothes",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "104",
+            "time": 177.0,
+            "label": "person",
+            "features": {
+                "dress": "whiteclothes",
+                "gender": "male",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "105",
+            "time": 177.0,
+            "label": "person",
+            "features": {
+                "dress": "purpleclothes",
+                "gender": "female",
+                "action": "observing"
+            }
+        },
+        {
+            "id": "106",
+            "time": 177.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "stationary",
+                "direction": "none"
+            }
+        },
+        {
+            "id": "107",
+            "time": 177.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "sedan",
+                "action": "moving",
+                "direction": ""
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 168.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105",
+                "106"
+            ],
+            "description": "blacksedanstill stationaryroadside，front is smoking。blackclothesmale、redclothesfemale、blueclothes、greenclotheswhiteclothesmalepurpleclothesfemalesedancontinueobserving。",
+            "cause": "loss of control",
+            "cause_event_id": "e2ad05ac",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "cbb751f7"
+        },
+        {
+            "event_type": "other",
+            "start_time": 168.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105"
+            ],
+            "description": "blackclothesmale、redclothesfemale、blueclothes、greenclotheswhiteclothesmalepurpleclothesfemalesedancontinueobserving。",
+            "cause": "",
+            "cause_event_id": "722fe642",
+            "confidence": "high",
+            "particularity": 1,
+            "connection": "accident",
+            "has_ended": "False",
+            "event_id": "5c7d9af8"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 177.0,
+            "target_ids": [
+                "107"
+            ],
+            "description": "whitesedanintersection，intersection。",
+            "cause": "",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "f25e3b52"
+        }
+    ],
+    "summary": "blacksedanstill stationaryroadside，front is smoking，continue。blackclothesmale、redclothesfemale、blueclothes、greenclotheswhiteclothesmalepurpleclothesfemalesedancontinueobserving。whitesedanintersection，intersection。observingcontinue。"
+}

@@ -1,0 +1,20 @@
+{
+  "valid_labels": ["person", "car"],
+  "feature_requirements": {
+    "person": ["gender", "dress", "action"],
+    "car": ["color", "type"]
+  },
+  "feature_descriptions": {
+    "person": {
+      "dress": "Clothing, e.g., red shirt, black pants",
+      "gender": "Apparent gender, e.g., male, female",
+      "action": "Specific action, e.g., walking north, talking, observing"
+    },
+    "car": {
+      "color": "Exterior color",
+      "type": "Vehicle type, e.g., sedan, truck, van, SUV",
+      "action": "Action, e.g., moving, parked, accident",
+      "direction": "Direction of movement"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 24.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "stationary",
+                "direction": "none"
+            }
+        },
+        {
+            "id": "101",
+            "time": 24.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "right"
+            }
+        },
+        {
+            "id": "102",
+            "time": 24.0,
+            "label": "car",
+            "features": {
+                "color": "red",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "left"
+            }
+        },
+        {
+            "id": "103",
+            "time": 24.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "right"
+            }
+        },
+        {
+            "id": "104",
+            "time": 24.0,
+            "label": "car",
+            "features": {
+                "color": "red",
+                "type": "van",
+                "action": "moving",
+                "direction": "left"
+            }
+        },
+        {
+            "id": "105",
+            "time": 28.0,
+            "label": "person",
+            "features": {
+                "dress": "whitetop",
+                "gender": "male",
+                "action": "walking toward black sedan"
+            }
+        },
+        {
+            "id": "106",
+            "time": 28.5,
+            "label": "person",
+            "features": {
+                "dress": "redtop",
+                "gender": "female",
+                "action": "walking toward black sedan"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 5.0,
+            "target_ids": [
+                "100"
+            ],
+            "description": "blacksedancrashed intoroadsidesignpost，，stationary，front is smoking。walking toward black sedan，possiblyrelated。",
+            "cause": "loss of control",
+            "cause_event_id": "3c9ec61e",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "56abd56b"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 24.0,
+            "target_ids": [
+                "101",
+                "102",
+                "103",
+                "104"
+            ],
+            "description": "intersectionmoving，white SUV、redsedan、blacksedanredvan，heavy traffic。",
+            "cause": "normal traffic",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "90d04fe2"
+        },
+        {
+            "event_type": "other",
+            "start_time": 28.0,
+            "target_ids": [
+                "105",
+                "106"
+            ],
+            "description": "walking toward black sedan，possibly。",
+            "cause": "accident draws attention",
+            "cause_event_id": "3c9ec61e",
+            "confidence": "medium",
+            "particularity": 3,
+            "connection": "accident",
+            "has_ended": "False",
+            "event_id": "63ba1930"
+        }
+    ],
+    "summary": "，intersectionmovingparked，heavy traffic。blacksedanstill stationaryroadside，front is smoking。walking toward black sedan，possiblyrelated。。"
+}

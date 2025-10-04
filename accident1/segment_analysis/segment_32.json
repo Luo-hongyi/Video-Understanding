@@ -1,0 +1,167 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 249.0,
+            "label": "person",
+            "features": {
+                "dress": "black",
+                "gender": "male",
+                "action": "walking toward"
+            }
+        },
+        {
+            "id": "101",
+            "time": 249.5,
+            "label": "person",
+            "features": {
+                "dress": "",
+                "gender": "female",
+                "action": "roadside"
+            }
+        },
+        {
+            "id": "102",
+            "time": 250.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "right"
+            }
+        },
+        {
+            "id": "103",
+            "time": 250.5,
+            "label": "person",
+            "features": {
+                "dress": "",
+                "gender": "male",
+                "action": "roadside"
+            }
+        },
+        {
+            "id": "104",
+            "time": 251.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "sedan",
+                "action": "stationary",
+                "direction": "None"
+            }
+        },
+        {
+            "id": "105",
+            "time": 251.5,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "right"
+            }
+        },
+        {
+            "id": "106",
+            "time": 252.0,
+            "label": "person",
+            "features": {
+                "dress": "black",
+                "gender": "male",
+                "action": "roadside"
+            }
+        },
+        {
+            "id": "107",
+            "time": 252.5,
+            "label": "person",
+            "features": {
+                "dress": "",
+                "gender": "female",
+                "action": "roadside"
+            }
+        },
+        {
+            "id": "108",
+            "time": 253.0,
+            "label": "person",
+            "features": {
+                "dress": "black",
+                "gender": "male",
+                "action": "walking toward"
+            }
+        },
+        {
+            "id": "109",
+            "time": 253.5,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "right"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "traffic",
+            "start_time": 249.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105",
+                "106",
+                "107",
+                "108",
+                "109"
+            ],
+            "description": "blacksedanwhitesedan，blacksedan。roadsideobserving，。",
+            "cause": "normal traffic。",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "185bbe2d"
+        },
+        {
+            "event_type": "other",
+            "start_time": 249.0,
+            "target_ids": [
+                "100",
+                "101",
+                "103",
+                "106",
+                "107"
+            ],
+            "description": "（blackmale、female、male）roadside，observing。",
+            "cause": "。",
+            "cause_event_id": "81614442",
+            "confidence": "medium",
+            "particularity": 1,
+            "connection": "traffic",
+            "has_ended": "False",
+            "event_id": "7fae2c84"
+        },
+        {
+            "event_type": "accident",
+            "start_time": 216.0,
+            "target_ids": [],
+            "description": "blacksedanstationaryroadside，front is smoking。（redmale、blackmale、blueTmale、darkmale）observing。already，stationaryroadside。",
+            "cause": "loss of control。",
+            "cause_event_id": "da4178c2",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "other",
+            "has_ended": "True",
+            "event_id": "0db0f23a"
+        }
+    ],
+    "summary": "already，blacksedanstationaryroadside。，blackwhitesedan，blacksedan。（blackmale、female、male）roadsideobserving，。"
+}

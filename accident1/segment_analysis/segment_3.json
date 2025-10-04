@@ -1,0 +1,162 @@
+{
+    "targets": [
+        {
+            "id": "100",
+            "time": 16.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "parked",
+                "direction": "stationary"
+            }
+        },
+        {
+            "id": "101",
+            "time": 16.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "SUV",
+                "action": "parked",
+                "direction": "stationary"
+            }
+        },
+        {
+            "id": "102",
+            "time": 16.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "eastwest"
+            }
+        },
+        {
+            "id": "103",
+            "time": 16.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "southnorth"
+            }
+        },
+        {
+            "id": "104",
+            "time": 16.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "northsouth"
+            }
+        },
+        {
+            "id": "105",
+            "time": 16.0,
+            "label": "car",
+            "features": {
+                "color": "red",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "westeast"
+            }
+        },
+        {
+            "id": "106",
+            "time": 16.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "eastwest"
+            }
+        },
+        {
+            "id": "107",
+            "time": 16.0,
+            "label": "car",
+            "features": {
+                "color": "white",
+                "type": "sedan",
+                "action": "moving",
+                "direction": "southnorth"
+            }
+        },
+        {
+            "id": "108",
+            "time": 16.0,
+            "label": "car",
+            "features": {
+                "color": "black",
+                "type": "SUV",
+                "action": "moving",
+                "direction": "northsouth"
+            }
+        }
+    ],
+    "events": [
+        {
+            "event_type": "accident",
+            "start_time": 5.0,
+            "target_ids": [
+                "100"
+            ],
+            "description": "blacksedancrashed intoroadsidesignpost，，stationary，front is smoking。",
+            "cause": "loss of control",
+            "cause_event_id": "8d7050d7",
+            "confidence": "high",
+            "particularity": 5,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "3c9ec61e"
+        },
+        {
+            "event_type": "traffic",
+            "start_time": 16.0,
+            "target_ids": [
+                "100",
+                "101",
+                "102",
+                "103",
+                "104",
+                "105",
+                "106",
+                "107",
+                "108"
+            ],
+            "description": "intersectionmovingparked，heavy traffic。blacksedanwhite SUVeastnorth。",
+            "cause": "None",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "c487fb53"
+        },
+        {
+            "event_type": "other",
+            "start_time": 16.0,
+            "target_ids": [
+                "102",
+                "104",
+                "106",
+                "108"
+            ],
+            "description": "intersectionmoving，eastwestnorthsouthmoving。",
+            "cause": "None",
+            "cause_event_id": "None",
+            "confidence": "high",
+            "particularity": 0,
+            "connection": "None",
+            "has_ended": "False",
+            "event_id": "3131c6a8"
+        }
+    ],
+    "summary": "，intersectionmovingparked，heavy traffic。blacksedaneastparked，white SUVnorth。blacksedancrashed intosignpost，front is smoking。。"
+}

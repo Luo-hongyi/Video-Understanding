@@ -1,0 +1,9 @@
+{
+  "event_types": {
+    "talking": "talking",
+    "fighting": "fighting",
+    "traffic": "traffic condition",
+    "accident": "accident",
+    "other": "other notable event"
+  }
+}
